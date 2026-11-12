@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { materials } from "@/lib/content";
 
 type Props = { selectedMaterial: string; onSelectMaterial: (name: string) => void };
@@ -17,7 +16,7 @@ export function MoodBoard({ selectedMaterial, onSelectMaterial }: Props) {
 
       <div className="mood-stage">
         <div className="mood-room" style={{ background: selected.tone }}>
-          <Image src="/images/mood-room.svg" alt="Neutral living room mood board" fill sizes="100vw" />
+          <div className="mood-room-photo" role="img" aria-label="Warm neutral living room reference photograph" />
           <div className="mood-wash" style={{ background: selected.tone }} />
           <div className="mood-caption">
             <span>{selected.name}</span>
@@ -35,7 +34,7 @@ export function MoodBoard({ selectedMaterial, onSelectMaterial }: Props) {
             aria-pressed={selected.id === material.id}
             onClick={() => onSelectMaterial(material.name)}
           >
-            <span className="swatch-image"><Image src={material.texture} alt="" fill sizes="72px" /></span>
+            <span className={`swatch-image swatch-${material.id}`} aria-hidden="true" />
             <span>{material.name}</span>
           </button>
         ))}
