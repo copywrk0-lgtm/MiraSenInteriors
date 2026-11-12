@@ -9,12 +9,13 @@ import { MoodBoard } from "./MoodBoard";
 import { StyleQuiz } from "./StyleQuiz";
 import { Footer } from "./Footer";
 import { Reveal } from "./Reveal";
+import { ScrollProgress } from "./ScrollProgress";
 
 export function Site() {
   const [selectedMaterial, setSelectedMaterial] = useState(materials[3].name);
 
   return (
-    <main>
+    <main><ScrollProgress />
       <header className="site-header">
         <a className="wordmark" href="#top" aria-label="Mira Sen Interiors home">Mira Sen Interiors</a>
         <nav aria-label="Primary navigation">
