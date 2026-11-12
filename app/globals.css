@@ -154,3 +154,34 @@ h3 { font-size: clamp(32px, 4vw, 54px); }
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
 }
+
+/* Motion layer — lightweight, GPU-friendly and reduced-motion aware */
+.js-reveal { opacity: 0; transform: translateY(42px); transition: opacity .8s ease, transform .8s cubic-bezier(.2,.7,.2,1); }
+.js-reveal.is-visible { opacity: 1; transform: none; }
+.project { view-timeline-name: --project; view-timeline-axis: block; }
+.project-meta h3 { transition: letter-spacing .5s ease; }
+.project:hover .project-meta h3 { letter-spacing: -.055em; }
+.tour-shot { overflow: hidden; }
+.image-block img { transform: scale(1.02); transition: transform 1s cubic-bezier(.2,.7,.2,1), filter .8s ease; }
+.tour-shot:hover .image-block img { transform: scale(1.06); }
+.tour-shot:nth-child(1) .image-block { clip-path: inset(0 0 0 0); transition: clip-path 1s cubic-bezier(.2,.7,.2,1); }
+.tour-shot:nth-child(1):hover .image-block { clip-path: inset(2% 2% 2% 2%); }
+.reveal > img { animation: hero-breathe 12s ease-in-out infinite alternate; }
+@keyframes hero-breathe { from { transform: scale(1); } to { transform: scale(1.035); } }
+.mood-room > img { transition: opacity .35s ease, transform .8s cubic-bezier(.2,.7,.2,1); }
+.mood-room:hover > img { transform: scale(1.025); }
+.swatch-image { transition: transform .25s ease, box-shadow .25s ease; }
+.swatch:hover .swatch-image { transform: translateY(-3px); box-shadow: 0 10px 25px rgba(36,35,31,.12); }
+.quiz-option { overflow: hidden; }
+.quiz-image img { transition: transform .55s cubic-bezier(.2,.7,.2,1), filter .35s ease; }
+.quiz-option:hover .quiz-image img { transform: scale(1.045); }
+.quiz-option.is-selected .quiz-image img { transform: scale(1.03); filter: saturate(.9); }
+.site-header a { transition: opacity .2s ease, border-color .2s ease; }
+.site-header nav a:hover { opacity: .55; }
+.header-cta:hover { border-color: transparent; }
+.footer h2 { transition: transform .8s cubic-bezier(.2,.7,.2,1); }
+.footer:hover h2 { transform: translateX(8px); }
+@media (prefers-reduced-motion: reduce) {
+  .js-reveal { opacity: 1; transform: none; }
+  .reveal > img, .image-block img, .mood-room > img, .quiz-image img, .footer h2 { animation: none; transition: none; transform: none; }
+}
