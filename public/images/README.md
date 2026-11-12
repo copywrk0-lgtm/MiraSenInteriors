@@ -1,0 +1,1 @@
+Replace these neutral SVG concept placeholders with the supplied designer photographs, keeping the same filenames. Do not add stock/Unsplash images.

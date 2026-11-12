@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 850">
+<defs>
+ <linearGradient id="light" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff" stop-opacity=".34"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+ <pattern id="grain" width="34" height="34" patternUnits="userSpaceOnUse"><path d="M2 6 C12 2 19 12 31 6 M4 20 C14 16 21 26 32 20" fill="none" stroke="#fff" stroke-opacity=".11" stroke-width="2"/></pattern>
+</defs>
+<rect width="1200" height="850" fill="#4b463f"/>
+<rect y="585" width="1200" height="265" fill="#a69b8b"/>
+<rect y="585" width="1200" height="265" fill="url(#grain)" opacity=".6"/>
+<rect x="0" y="0" width="1200" height="30" fill="#292622" opacity=".08"/>
+<!-- architectural frame -->
+<rect x="60" y="72" width="1080" height="500" fill="none" stroke="#292622" stroke-opacity=".18" stroke-width="4"/>
+<rect x="720" y="108" width="320" height="300" fill="#dfe2dc" stroke="#292622" stroke-opacity=".18" stroke-width="8"/>
+<line x1="880" y1="108" x2="880" y2="408" stroke="#292622" stroke-opacity=".18" stroke-width="5"/>
+<line x1="720" y1="258" x2="1040" y2="258" stroke="#292622" stroke-opacity=".18" stroke-width="5"/>
+<polygon points="720,108 1040,108 1040,408 720,408" fill="url(#light)"/>
+<!-- timber wall -->
+<rect x="70" y="90" width="250" height="470" fill="#7e6b58" opacity=".82"/>
+<g opacity=".18"><rect x="80" y="90" width="10" height="470" fill="#fff"/><rect x="110" y="90" width="10" height="470" fill="#fff"/><rect x="140" y="90" width="10" height="470" fill="#fff"/><rect x="170" y="90" width="10" height="470" fill="#fff"/><rect x="200" y="90" width="10" height="470" fill="#fff"/><rect x="230" y="90" width="10" height="470" fill="#fff"/><rect x="260" y="90" width="10" height="470" fill="#fff"/></g>
+<!-- sofa -->
+<rect x="420" y="500" width="430" height="130" rx="28" fill="#eee8dc" stroke="{dark}" stroke-opacity=".15" stroke-width="5"/>
+<rect x="438" y="438" width="394" height="100" rx="24" fill="#f4efe6" stroke="{dark}" stroke-opacity=".12" stroke-width="5"/>
+<rect x="475" y="465" width="90" height="58" rx="14" fill="{wood}" opacity=".78"/>
+<rect x="580" y="465 width="90" height="58" rx="14" fill="{plant}" opacity=".6"/>
+<rect x="685" y="465 width="90" height="58" rx="14" fill="{rug}" opacity=".9"/>
+<!-- coffee table -->
+<ellipse cx="620" cy="700" rx="190" ry="42" fill="{dark}" opacity=".16"/>
+<rect x="455" y="640" width="330" height="40" rx="20" fill="{wood}"/>
+<rect x="490" y="680" width="18" height="95" fill="{dark}" opacity=".72"/><rect x="735" y="680" width="18" height="95" fill="{dark}" opacity=".72"/>
+<!-- plant -->
+<rect x="1000" y="570" width="70" height="95" rx="12" fill="{wood}"/>
+<path d="M1035 570 C980 520 990 460 1030 430 C1010 500 1070 470 1080 420 C1100 500 1070 540 1035 570" fill="{plant}"/>
+<!-- art -->
+<rect x="430" y="160" width="170" height="210" fill="#f1eee7" stroke="{dark}" stroke-opacity=".2" stroke-width="5"/>
+<circle cx="515" cy="250" r="48" fill="{wood}" opacity=".5"/><path d="M455 330 Q515 270 575 330" fill="none" stroke="{dark}" stroke-opacity=".35" stroke-width="5"/>
+<text x="600" y="805" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" letter-spacing="4" fill="{dark}" opacity=".42">{esc(label.upper())}</text>
+</svg>
