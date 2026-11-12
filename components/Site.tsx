@@ -8,6 +8,7 @@ import { ProjectTour } from "./ProjectTour";
 import { MoodBoard } from "./MoodBoard";
 import { StyleQuiz } from "./StyleQuiz";
 import { Footer } from "./Footer";
+import { Reveal } from "./Reveal";
 
 export function Site() {
   const [selectedMaterial, setSelectedMaterial] = useState(materials[3].name);
@@ -26,10 +27,10 @@ export function Site() {
 
       <div id="top">
         <HeroReveal />
-        <Intro />
-        <ProjectTour />
-        <MoodBoard selectedMaterial={selectedMaterial} onSelectMaterial={setSelectedMaterial} />
-        <StyleQuiz selectedMaterial={selectedMaterial} />
+        <Reveal><Intro /></Reveal>
+        <Reveal><ProjectTour /></Reveal>
+        <Reveal><MoodBoard selectedMaterial={selectedMaterial} onSelectMaterial={setSelectedMaterial} /></Reveal>
+        <Reveal><StyleQuiz selectedMaterial={selectedMaterial} /></Reveal>
       </div>
 
       <Footer />
