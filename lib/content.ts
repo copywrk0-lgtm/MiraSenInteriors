@@ -28,9 +28,9 @@ export const projects: Project[] = [
     location: "Defence Colony · 2,100 sq ft",
     note: "Why walnut here? The darker grain anchors an otherwise pale palette and makes the long living room feel more intimate.",
     images: [
-      { src: "/images/project-1-entrance.svg", alt: "Warm apartment entrance with timber details", label: "Entrance" },
-      { src: "/images/project-1-living.svg", alt: "Warm living room with walnut joinery", label: "Living room" },
-      { src: "/images/project-1-bedroom.svg", alt: "Calm bedroom with layered natural textures", label: "Bedroom" }
+      { src: "/images/scene-warm.svg", alt: "Warm apartment entrance with timber details", label: "Entrance" },
+      { src: "/images/scene-warm.svg", alt: "Warm living room with walnut joinery", label: "Living room" },
+      { src: "/images/scene-warm.svg", alt: "Calm bedroom with layered natural textures", label: "Bedroom" }
     ]
   },
   {
@@ -38,9 +38,9 @@ export const projects: Project[] = [
     location: "Gurugram · 3,400 sq ft",
     note: "The clay-toned walls soften the hard geometry of the architecture, letting daylight do most of the decorating.",
     images: [
-      { src: "/images/project-2-entrance.svg", alt: "Clay-toned residential entrance", label: "Arrival" },
-      { src: "/images/project-2-living.svg", alt: "Sunlit living room in warm neutral tones", label: "Living room" },
-      { src: "/images/project-2-bedroom.svg", alt: "Bedroom with soft linen and warm plaster tones", label: "Bedroom" }
+      { src: "/images/scene-earth.svg", alt: "Clay-toned residential entrance", label: "Arrival" },
+      { src: "/images/scene-earth.svg", alt: "Sunlit living room in warm neutral tones", label: "Living room" },
+      { src: "/images/scene-earth.svg", alt: "Bedroom with soft linen and warm plaster tones", label: "Bedroom" }
     ]
   },
   {
@@ -48,9 +48,9 @@ export const projects: Project[] = [
     location: "South Delhi · 1,250 sq ft",
     note: "We kept the material language restrained: oak, linen and brushed brass, so the space feels residential without becoming precious.",
     images: [
-      { src: "/images/project-3-entrance.svg", alt: "Minimal office reception with oak details", label: "Reception" },
-      { src: "/images/project-3-work.svg", alt: "Quiet workspace with timber and soft light", label: "Workroom" },
-      { src: "/images/project-3-meeting.svg", alt: "Meeting room with neutral materials", label: "Meeting room" }
+      { src: "/images/scene-luxe.svg", alt: "Minimal office reception with oak details", label: "Reception" },
+      { src: "/images/scene-luxe.svg", alt: "Quiet workspace with timber and soft light", label: "Workroom" },
+      { src: "/images/scene-luxe.svg", alt: "Meeting room with neutral materials", label: "Meeting room" }
     ]
   }
 ];
@@ -69,46 +69,46 @@ export const quizQuestions = [
     id: "mood",
     title: "Which room feels like you?",
     options: [
-      { value: "warm-minimal", label: "Warm minimal", image: "/images/quiz-warm-minimal.svg" },
-      { value: "earthy", label: "Earthy & collected", image: "/images/quiz-earthy.svg" },
-      { value: "quiet-luxe", label: "Quiet luxury", image: "/images/quiz-quiet-luxe.svg" }
+      { value: "warm-minimal", label: "Warm minimal", image: "/images/scene-warm.svg" },
+      { value: "earthy", label: "Earthy & collected", image: "/images/scene-earth.svg" },
+      { value: "quiet-luxe", label: "Quiet luxury", image: "/images/scene-luxe.svg" }
     ]
   },
   {
     id: "warmth",
     title: "How warm should the palette feel?",
     options: [
-      { value: "pale", label: "Pale & airy", image: "/images/quiz-pale.svg" },
-      { value: "balanced", label: "Balanced", image: "/images/quiz-balanced.svg" },
-      { value: "deep", label: "Deep & cocooning", image: "/images/quiz-deep.svg" }
+      { value: "pale", label: "Pale & airy", image: "/images/scene-warm.svg" },
+      { value: "balanced", label: "Balanced", image: "/images/scene-earth.svg" },
+      { value: "deep", label: "Deep & cocooning", image: "/images/scene-luxe.svg" }
     ]
   },
   {
     id: "materials",
     title: "Which material mix would you choose?",
     options: [
-      { value: "wood-linen", label: "Oak + linen", image: "/images/quiz-oak-linen.svg" },
-      { value: "stone-brass", label: "Stone + brass", image: "/images/quiz-stone-brass.svg" },
-      { value: "clay-jute", label: "Clay + jute", image: "/images/quiz-clay-jute.svg" }
+      { value: "wood-linen", label: "Oak + linen", image: "/images/scene-warm.svg" },
+      { value: "stone-brass", label: "Stone + brass", image: "/images/scene-luxe.svg" },
+      { value: "clay-jute", label: "Clay + jute", image: "/images/scene-earth.svg" }
     ]
   },
   {
     id: "use",
     title: "How should home work for you?",
     options: [
-      { value: "hosting", label: "Hosting often", image: "/images/quiz-hosting.svg" },
-      { value: "slow", label: "Slow mornings", image: "/images/quiz-slow.svg" },
-      { value: "family", label: "Family life", image: "/images/quiz-family.svg" }
+      { value: "hosting", label: "Hosting often", image: "/images/scene-luxe.svg" },
+      { value: "slow", label: "Slow mornings", image: "/images/scene-warm.svg" },
+      { value: "family", label: "Family life", image: "/images/scene-earth.svg" }
     ]
   },
   {
     id: "budget",
     title: "What range are you planning around?",
     options: [
-      { value: "under-10", label: "Under ₹10L", image: "/images/quiz-under-10.svg" },
-      { value: "10-20", label: "₹10–20L", image: "/images/quiz-10-20.svg" },
-      { value: "20-plus", label: "₹20L+", image: "/images/quiz-20-plus.svg" },
-      { value: "unsure", label: "Not sure yet", image: "/images/quiz-unsure.svg" }
+      { value: "under-10", label: "Under ₹10L", image: "/images/scene-warm.svg" },
+      { value: "10-20", label: "₹10–20L", image: "/images/scene-earth.svg" },
+      { value: "20-plus", label: "₹20L+", image: "/images/scene-luxe.svg" },
+      { value: "unsure", label: "Not sure yet", image: "/images/scene-warm.svg" }
     ]
   }
 ] as const;
