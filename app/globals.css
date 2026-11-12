@@ -228,3 +228,16 @@ h3 { font-size: clamp(32px, 4vw, 54px); }
 }
 
 .scroll-progress { position: fixed; top: 0; left: 0; right: 0; height: 2px; background: var(--ink); transform-origin: 0 50%; z-index: 100; pointer-events: none; }
+
+.reveal-before-image { filter: grayscale(.7) saturate(.45) brightness(.82) contrast(.94); transform: scale(1.015); }
+.reveal-before-image::after { content: ""; }
+.reveal-after img { transform: scale(1.015); }
+.mood-room-photo { position:absolute; inset:0; background-image:url("https://images.pexels.com/photos/6580222/pexels-photo-6580222.jpeg?auto=compress&cs=tinysrgb&w=1800"); background-size:cover; background-position:center; z-index:0; transition: transform .8s cubic-bezier(.2,.7,.2,1); }
+.mood-room:hover .mood-room-photo { transform:scale(1.025); }
+.swatch-image { background-size:cover; background-position:center; }
+.swatch-marble { background:linear-gradient(135deg,#e7e1d8 0%,#cfc8be 45%,#eee9e1 46%,#d5cec4 70%,#ebe6de 100%); }
+.swatch-jute { background:repeating-linear-gradient(0deg,#b79b72 0 2px,#c6ad88 2px 4px); }
+.swatch-brass { background:linear-gradient(120deg,#8f7447,#c2a36a 38%,#9e814f 62%,#d1b77e); }
+.swatch-oak { background:repeating-linear-gradient(90deg,#c9a678 0 8px,#b58d61 8px 11px,#d4b486 11px 20px); }
+.swatch-linen { background:repeating-linear-gradient(0deg,#d8d1c3 0 2px,#cfc7b8 2px 3px); }
+.swatch-terrazzo { background-color:#c7c0b4;background-image:radial-gradient(circle at 20% 30%,#918b82 0 2px,transparent 3px),radial-gradient(circle at 70% 60%,#aaa39a 0 3px,transparent 4px),radial-gradient(circle at 45% 80%,#ded8cf 0 4px,transparent 5px); }
