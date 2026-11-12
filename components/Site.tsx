@@ -16,7 +16,7 @@ export function Site() {
   return (
     <main>
       <header className="site-header">
-        <a className="wordmark" href="#top" aria-label="Aster House home">Aster House</a>
+        <a className="wordmark" href="#top" aria-label="Mira Sen Interiors home">Mira Sen Interiors</a>
         <nav aria-label="Primary navigation">
           <a href="#work">Work</a>
           <a href="#mood">Mood</a>
