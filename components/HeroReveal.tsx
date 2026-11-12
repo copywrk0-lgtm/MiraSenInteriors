@@ -42,7 +42,7 @@ export function HeroReveal() {
           updateFromPointer(event.clientX);
         }}
       >
-        <Image src={hero.before} alt="Before interior transformation" fill priority sizes="100vw" />
+        <Image className="reveal-before-image" src={hero.after} alt="Existing room before the proposed transformation" fill priority sizes="100vw" />
         <div className="reveal-after" style={{ clipPath: `inset(0 0 0 ${position}%)` }}>
           <Image src={hero.after} alt="After interior transformation" fill priority sizes="100vw" />
         </div>
