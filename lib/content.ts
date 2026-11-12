@@ -9,7 +9,7 @@ export const site = {
 };
 
 export const hero = {
-  before: "https://images.pexels.com/photos/4756489/pexels-photo-4756489.jpeg?auto=compress&cs=tinysrgb&w=1800",
+  before: "https://images.pexels.com/photos/39828938/pexels-photo-39828938.jpeg?auto=compress&cs=tinysrgb&w=1800",
   after: "https://images.pexels.com/photos/39828938/pexels-photo-39828938.jpeg?auto=compress&cs=tinysrgb&w=1800",
   title: "Rooms with a quieter point of view.",
   copy: "Mira Sen shapes warm, considered interiors around the way people actually live — from first sketch to final detail."
@@ -56,12 +56,12 @@ export const projects: Project[] = [
 ];
 
 export const materials = [
-  { id: "marble", name: "Veined marble", note: "Quiet luxury, with a little natural movement.", tone: "#d8d1c5", texture: "https://images.pexels.com/photos/1203/pexels-photo-1203.jpeg?auto=compress&cs=tinysrgb&w=500" },
-  { id: "jute", name: "Jute", note: "Tactile, grounded and comfortably imperfect.", tone: "#b79e78", texture: "https://images.pexels.com/photos/129731/pexels-photo-129731.jpeg?auto=compress&cs=tinysrgb&w=500" },
-  { id: "brass", name: "Brushed brass", note: "A warm glint that catches evening light.", tone: "#ad8e58", texture: "https://images.pexels.com/photos/132700/pexels-photo-132700.jpeg?auto=compress&cs=tinysrgb&w=500" },
-  { id: "oak", name: "White oak", note: "Light, calm and easy to live around.", tone: "#c7a87a", texture: "https://images.pexels.com/photos/129733/pexels-photo-129733.jpeg?auto=compress&cs=tinysrgb&w=500" },
-  { id: "linen", name: "Natural linen", note: "Softens the room without making it sleepy.", tone: "#d7d0c1", texture: "https://images.pexels.com/photos/5709661/pexels-photo-5709661.jpeg?auto=compress&cs=tinysrgb&w=500" },
-  { id: "terrazzo", name: "Terrazzo", note: "A little graphic energy without shouting.", tone: "#aaa294", texture: "https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=500" }
+  { id: "marble", name: "Veined marble", note: "Quiet luxury, with a little natural movement.", tone: "#d8d1c5" },
+  { id: "jute", name: "Jute", note: "Tactile, grounded and comfortably imperfect.", tone: "#b79e78" },
+  { id: "brass", name: "Brushed brass", note: "A warm glint that catches evening light.", tone: "#ad8e58" },
+  { id: "oak", name: "White oak", note: "Light, calm and easy to live around.", tone: "#c7a87a" },
+  { id: "linen", name: "Natural linen", note: "Softens the room without making it sleepy.", tone: "#d7d0c1" },
+  { id: "terrazzo", name: "Terrazzo", note: "A little graphic energy without shouting.", tone: "#aaa294" }
 ];
 
 export const quizQuestions = [
