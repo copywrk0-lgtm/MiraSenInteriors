@@ -15,7 +15,7 @@ export function Footer() {
       </div>
       <div className="disclaimer">
         <p>Independent website concept by {site.brand}. Not an official {site.name} website.</p>
-        <p>Concept imagery is original visual mockup artwork, not portfolio work by {site.name}. Project names and details are placeholders.</p>
+        <p>Visual reference photography is sourced from Pexels and is illustrative, not portfolio work by {site.name}. Project names and details are placeholders.</p>
       </div>
     </footer>
   );
